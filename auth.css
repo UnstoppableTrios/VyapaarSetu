@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background: linear-gradient(135deg, #f7f4ef, #f2e8dc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .auth-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+  }
+  
+  .auth-box {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-box h2 {
+    color: #6b3f1d;
+    margin-bottom: 6px;
+  }
+  
+  .subtitle {
+    color: #8b6f55;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+  
+  .auth-box input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1.5px solid #e0c9a6;
+    background: #fffaf3;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .auth-box input:focus {
+    border-color: #d35400;
+    background: #fff;
+  }
+  
+  .auth-box button {
+    width: 100%;
+    padding: 12px;
+    background: #d35400;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .auth-box button:hover {
+    background: #b84300;
+  }
+  
+  .switch {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #7a5a3a;
+  }
+  
+  .switch a {
+    color: #d35400;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .google-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px;
+    margin-top: 16px;
+    border-radius: 8px;
+    border: 1.5px solid #ddd;
+    background: #ffffff;
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .google-btn img {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .google-btn:hover {
+    background: #f5f5f5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+    
+  .divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+  }
+  
+  .divider span {
+    padding: 0 10px;
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .signup-switch {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .role-options {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  
+  .role-card {
+    flex: 1;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1.5px solid #e0c9a6;
+    background: #fffaf3;
+    text-decoration: none;
+    color: #3b2a1a;
+    transition: 0.3s ease;
+  }
+  
+  .role-card:hover {
+    border-color: #d35400;
+    box-shadow: 0 6px 14px rgba(211, 84, 0, 0.15);
+  }
+  
+  .role-card.owner {
+    background: #fff3e6;
+    border-color: #d35400;
+  }
+  
+  .href {
+    text-decoration: none;
+    color: white;
+  }
