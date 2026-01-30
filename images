@@ -1,7 +1,0 @@
-<script>start("/Users/sanjitrakshit/VPS/images/");</script>
-<script>onHasParentDirectory();</script>
-<script>addRow(".DS_Store",".DS_Store",0,6148,"6.0 kB",1769538596,"27/01/2026, 23:59:56");</script>
-<script>addRow("cover.jpg","cover.jpg",0,37503,"36.6 kB",1769095177,"22/01/2026, 20:49:37");</script>
-<script>addRow("home.svg","home.svg",0,341,"341 B",1769432853,"26/01/2026, 18:37:33");</script>
-<script>addRow("logo.svg","logo.svg",0,27968,"27.3 kB",1769427024,"26/01/2026, 17:00:24");</script>
-<script>addRow("search.svg","search.svg",0,497,"497 B",1769444509,"26/01/2026, 21:51:49");</script>
