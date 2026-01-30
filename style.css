@@ -211,14 +211,14 @@ div.container{
     color: #6b3f1d;
   }
   
-  /* Grid layout */
+  /* Grid layout 
   .shop-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   
-  /* Card */
+  /* Card 
   .shop-card {
     background: #fffaf3;
     border-radius: 14px;
@@ -231,7 +231,7 @@ div.container{
     transform: translateY(-4px);
   }
   
-  /* Image area */
+  /* Image area 
   .shop-image {
     height: 160px;
     background: #f0e4d6;
@@ -247,7 +247,7 @@ div.container{
     object-fit: cover;
   }
   
-  /* Placeholder */
+  /* Placeholder 
   .shop-image.placeholder {
     background: repeating-linear-gradient(
       45deg,
@@ -261,7 +261,7 @@ div.container{
     font-size: 14px;
   }
   
-  /* Info */
+  /* Info 
   .shop-info {
     padding: 14px;
   }
@@ -284,4 +284,140 @@ div.container{
     font-weight: 600;
   }
   
-    
+     /* GRID */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.shop-card {
+  background: #fffaf3;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0,0,0,0.12);
+}
+
+/* IMAGE */
+.shop-image {
+  height: 130px;
+  position: relative;
+  background: #f0e4d6;
+}
+
+.shop-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* VERIFIED BADGE */
+.badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #ff9800, #d35400);
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* INFO */
+.shop-info {
+    background-color: #fff5e7;
+  padding: 14px;
+}
+
+.shop-info h3 {
+  font-size: 16px;
+  color: #4b2e1a;
+}
+
+.shop-info p {
+  font-size: 13px;
+  color: #7a5a3a;
+  margin: 4px 0;
+}
+
+.rating {
+  font-size: 12px;
+  color: #d35400;
+  font-weight: 600;
+}
+
+/* ACTION BUTTONS */
+.shop-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.btn {
+  flex: 1;
+  padding: 9px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.call {
+  background: #2ecc71;
+  color: white;
+}
+
+.btn.direction {
+  background: #3498db;
+  color: white;
+}
+
+/* BUTTON HOVER ANIMATION */
+.btn:hover {
+  transform: translateY(-2px) scale(1.04);
+  filter: brightness(1.1);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* ---------- SKELETON ---------- */
+
+.skeleton {
+  height: 33.3vh;
+  background: linear-gradient(
+    90deg,
+    #eee 25%,
+    #f5f5f5 37%,
+    #eee 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s infinite;
+  border-radius: 14px;
+}
+
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #6b3f1d;
+  }
