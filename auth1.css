@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background: linear-gradient(135deg, #f7f4ef, #f2e8dc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .auth-container {
+    width: 100%;
+    max-width: 460px;
+    padding: 20px;
+  }
+  
+  .auth-box {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-box h2 {
+    color: #6b3f1d;
+    margin-bottom: 6px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: #8b6f55;
+    margin-bottom: 20px;
+  }
+  
+  .auth-box input,
+  .auth-box select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    border: 1.5px solid #e0c9a6;
+    background: #fffaf3;
+    outline: none;
+  }
+  
+  .auth-box input:focus,
+  .auth-box select:focus {
+    border-color: #d35400;
+    background: #fff;
+  }
+  
+  .auth-box button {
+    width: 100%;
+    padding: 12px;
+    background: #d35400;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .auth-box button:hover {
+    background: #b84300;
+  }
+  
+  /* Google Button */
+  .google-btn {
+    margin-top: 14px;
+    background: #fff;
+    color: #444;
+    border: 1.5px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .google-btn img {
+    width: 18px;
+  }
+  
+  .switch {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+    color: #7a5a3a;
+  }
+  
+  .switch a {
+    color: #d35400;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
