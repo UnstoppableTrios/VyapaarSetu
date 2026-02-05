@@ -11,64 +11,85 @@
 </head>
 
 <body>
-    
-<div class="header">
+
+    <div class="header">
+
+        <i class="fas fa-bars menu-toggle"></i>
+
+
+        <div class="logo">
+            <span>Vyapaar</span><strong>Setu</strong>
+        </div>
+
+        <div class="location">
+            <span>Select Location</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
+
         <!--<label for='search-btn'>Show search bar</label>-->
         <input id='search-bar' type='text' placeholder=' 🔍 Search...' />
         <img src="image/cover.jpg" class="avatar" />
 
-        <!--<nav class="header-menu flex">
-            <li><a href="index.html"><img class="imagee" src="images/home.svg" alt="home">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </nav>-->
-    </div>
-
-    <div class="left">
-        <aside class="sidebar">
-
-            <div class="container">
-                <div class="logo1">
-                    <img class="imagee" src="image/logo.svg" alt="logo">
-                    <div class="logo">
-                        <span>Vyapaar</span><strong>Setu</strong>
-                    </div>
-                </div>
-
-            <nav class="menu">
-                <a href="landing.html" class="active"><i class="fas fa-home"></i> Home</a>
-                <a href="#"><i class="fas fa-compass"></i> Discovery</a>
-                <a href="#"><i class="fas fa-search"></i> Search & Filter</a>
-                <a href="#"><i class="fas fa-users"></i> Community Feed</a>
-                <a href="#"><i class="fas fa-store"></i> Market Explorer</a>
-            </nav>
-        </aside>
+        <div class="icon-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Cart</span>
+        </div>
 
     </div>
-    <div class="right border">
+   
 
+
+    <div class="category-bar">
+        <a class="active"><i class="fa-solid fa-bag-shopping"></i> All</a>
+        <a><i class="fa-solid fa-house"></i> Home</a>
+        <a><i class="fa-solid fa-duck"></i> Toys</a>
+        <a><i class="fa-solid fa-apple-whole"></i> Fresh</a>
+        <a><i class="fa-solid fa-headphones"></i> Electronics</a>
+        <a><i class="fa-solid fa-mobile-screen"></i> Mobiles</a>
+        <a><i class="fa-solid fa-wand-magic-sparkles"></i> Beauty</a>
+        <a><i class="fa-solid fa-shirt"></i> Fashion</a>
+    </div>
+    </aside>
+
+    <main class="main-content">
         <div class="main-content">
 
             <h2 class="section-title"> 🏪 Trending Shops Near You</h2>
-          
+
             <div class="shop-grid" id="shopGrid">
 
-              <!-- Skeleton cards -->
-              <div class="shop-card skeleton"></div>
-              <div class="shop-card skeleton"></div>
-              <div class="shop-card skeleton"></div>
-              <div class="shop-card skeleton"></div>
-            
-            </div>
-            
-          
+                <!-- Skeleton cards -->
+                <div class="shop-card skeleton"></div>
+                <div class="shop-card skeleton"></div>
+                <div class="shop-card skeleton"></div>
+                <div class="shop-card skeleton"></div>
 
+            </div>
+
+
+
+        </div>
+    </main>
     </div>
+
+
+
+
     <footer class="footer flex flex-col justify-center items-center gap-2 p-4">
         <p>© 2026 VyapaarSetu. All rights reserved.</p>
         <span>Made with ❤️ and care</span>
+
     </footer>
+    <script>
+
+        const toggleBtn = document.querySelector(".menu-toggle");
+        const sidebar = document.querySelector(".sidebar");
+
+        toggleBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("collapsed");
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 

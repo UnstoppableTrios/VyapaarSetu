@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Support - Vyapar Setu</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="test.css">
+</head>
+<body>
+   
+    <header>
+        <div class="container">
+            <div class="logo1">
+                <img class="imagee" src="image/logo.svg" alt="logo">
+                <div class="logo">
+                    <span>Vyapaar</span><strong>Setu</strong>
+                </div>
+            </div>
+
+        <nav class="menu">
+            <a href="landing.html"><i class="fas fa-home"></i> </a>
+            <a href="#"><i class="fas fa-compass"></i> </a>
+            <a href="#"><i class="fas fa-search"></i> </a>
+            <a href="test.html"><i class="fas fa-users"></i> </a>
+            <a href="#"><i class="fas fa-store"></i> </a>
+        </nav>
+
+         <!-- Header 
+        <div class="header-container">
+            <div class="logo">
+             
+                <img src="https://picsum.photos/seed/vyapar-logo/40/40" alt="Vyapar Setu Logo" class="logo-img">
+                
+                <div class="logo-icon" style="display: none;">VS</div>
+                <span>Vyapar Setu</span>
+            </div>
+            <div class="nav-icons">
+                
+                <div class="nav-icon">
+                    <img src="https://picsum.photos/seed/message-icon/20/20" alt="Messages">
+                </div>
+                <div class="nav-icon">
+                    <img src="https://picsum.photos/seed/search-icon/20/20" alt="Search">
+                </div>
+                <div class="nav-icon">
+                    <img src="https://picsum.photos/seed/profile-icon/20/20" alt="Profile">
+                </div>
+            </div>
+        </div> -->
+    </header>
+
+    <!-- Banner Image Section -->
+    <div class="banner-section">
+        <!-- Banner Image Placeholder - Replace src with your banner -->
+        <img src="https://picsum.photos/seed/help-banner/1200/200" alt="Help & Support Banner" class="banner-img">
+    </div>
+
+    <!-- Main Title Area -->
+    <div class="main-title">
+        <h1>Help & Support</h1>
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Describe your issue...">
+            <span class="search-icon" onclick="handleSearch()">🔍</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-container">
+        <div class="cards-section">
+            <div class="card card-order" style="--delay: 0" onclick="handleCardClick('Order Issues')">
+                <!-- Card Image Option 1: Replace icon with image -->
+                <img src="https://picsum.photos/seed/order-box/50/50" alt="Order Issues" class="card-image">
+                <!-- Card Image Option 2: Keep icon as fallback -->
+                <div class="card-icon" style="display: none;">📦</div>
+                <div class="card-content">
+                    <h3>Order Issues</h3>
+                    <p>Having trouble with your order? Track, modify, or cancel your orders here.</p>
+                </div>
+            </div>
+
+            <div class="card card-payment" style="--delay: 1" onclick="handleCardClick('Payment Problems')">
+                <img src="https://picsum.photos/seed/payment-card/50/50" alt="Payment Problems" class="card-image">
+                <div class="card-icon" style="display: none;">💳</div>
+                <div class="card-content">
+                    <h3>Payment Problems</h3>
+                    <p>Payment failed? Refund pending? Get help with all payment related queries.</p>
+                </div>
+            </div>
+
+            <div class="card card-delivery" style="--delay: 2" onclick="handleCardClick('Delivery Concerns')">
+                <img src="https://picsum.photos/seed/delivery-truck/50/50" alt="Delivery Concerns" class="card-image">
+                <div class="card-icon" style="display: none;">🚚</div>
+                <div class="card-content">
+                    <h3>Delivery Concerns</h3>
+                    <p>Track your delivery, change address, or report delivery issues.</p>
+                </div>
+            </div>
+
+            <div class="card card-return" style="--delay: 3" onclick="handleCardClick('Returns & Refunds')">
+                <img src="https://picsum.photos/seed/return-box/50/50" alt="Returns & Refunds" class="card-image">
+                <div class="card-icon" style="display: none;">↩️</div>
+                <div class="card-content">
+                    <h3>Returns & Refunds</h3>
+                    <p>Initiate returns, check refund status, and understand our return policy.</p>
+                </div>
+            </div>
+
+            <div class="card card-safety" style="--delay: 4" onclick="handleCardClick('Trust & Safety')">
+                <img src="https://picsum.photos/seed/safety-shield/50/50" alt="Trust & Safety" class="card-image">
+                <div class="card-icon" style="display: none;">🛡️</div>
+                <div class="card-content">
+                    <h3>Trust & Safety</h3>
+                    <p>Our 20% Buyer Protection ensures you have a safe & delightful shopping experience.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="illustration-section">
+            <div class="illustration">
+                <!-- Main Illustration Image - Replace src with your illustration -->
+                <img src="https://picsum.photos/seed/support-illustration/200/200" alt="Support Illustration" class="illustration-img">
+                <!-- Fallback icon if image not available -->
+                <div class="illustration-icon" style="display: none;">🤝</div>
+                <h2>How can we help you today?</h2>
+                <p>Our support team is here to assist you with any questions or concerns you may have about using Vyapar Setu.</p>
+                <button class="chat-button" onclick="startChat()">Start Live Chat</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Images Section -->
+    <div class="footer-images">
+        <!-- Footer Image Placeholders - Replace src with your images -->
+        <img src="https://picsum.photos/seed/footer1/150/100" alt="Support Feature 1" class="footer-img">
+        <img src="https://picsum.photos/seed/footer2/150/100" alt="Support Feature 2" class="footer-img">
+        <img src="https://picsum.photos/seed/footer3/150/100" alt="Support Feature 3" class="footer-img">
+        <img src="https://picsum.photos/seed/footer4/150/100" alt="Support Feature 4" class="footer-img">
+        <img src="https://picsum.photos/seed/footer5/150/100" alt="Support Feature 5" class="footer-img">
+        <img src="https://picsum.photos/seed/footer6/150/100" alt="Support Feature 6" class="footer-img">
+    </div>
+
+    <!-- Chat Popup -->
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-popup-header">
+            <!-- Support Agent Avatar - Replace src with agent photo -->
+            <div class="chat-avatar">
+                <img src="https://picsum.photos/seed/agent-avatar/40/40" alt="Support Agent" class="chat-avatar-img">
+            </div>
+            <!-- Fallback icon if image not available -->
+            <div class="chat-avatar" style="display: none;">👨‍💼</div>
+            <div class="chat-status">
+                <h4>Support Agent</h4>
+                <span>● Online</span>
+            </div>
+        </div>
+        <div class="chat-message">
+            Hello! I'm here to help you with any questions about Vyapar Setu. Would you like to start a chat session?
+        </div>
+        <div class="chat-actions">
+            <button class="chat-action-btn chat-accept" onclick="acceptChat()">Accept</button>
+            <button class="chat-action-btn chat-decline" onclick="declineChat()">Decline</button>
+        </div>
+    </div>
+
+    <script>
+        // Handle search functionality
+        function handleSearch() {
+            const searchInput = document.getElementById('searchInput');
+            const query = searchInput.value.trim();
+            
+            if (query) {
+                console.log('Searching for:', query);
+                showNotification(`Searching for: "${query}"`);
+                searchInput.value = '';
+            } else {
+                showNotification('Please enter your issue in the search bar');
+            }
+        }
+
+        // Handle card clicks
+        function handleCardClick(category) {
+            console.log('Clicked on:', category);
+            showNotification(`Opening ${category} help section...`);
+        }
+
+        // Start chat function
+        function startChat() {
+            const chatPopup = document.getElementById('chatPopup');
+            chatPopup.classList.add('show');
+            
+            setTimeout(() => {
+                if (chatPopup.classList.contains('show')) {
+                    chatPopup.classList.remove('show');
+                }
+            }, 10000);
+        }
+
+        // Accept chat
+        function acceptChat() {
+            const chatPopup = document.getElementById('chatPopup');
+            chatPopup.classList.remove('show');
+            showNotification('Connecting you to a support agent...');
+            
+            setTimeout(() => {
+                showNotification('You are now connected with a support agent!');
+            }, 1500);
+        }
+
+        // Decline chat
+        function declineChat() {
+            const chatPopup = document.getElementById('chatPopup');
+            chatPopup.classList.remove('show');
+            showNotification('Chat request cancelled');
+        }
+
+        // Show notification
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: white;
+                color: #333;
+                padding: 15px 25px;
+                border-radius: 50px;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+                z-index: 2000;
+                animation: slideDown 0.3s ease;
+            `;
+            notification.textContent = message;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.animation = 'slideUp 0.3s ease';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+
+        // Add animation styles
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideDown {
+                from { transform: translate(-50%, -100%); opacity: 0; }
+                to { transform: translate(-50%, 0); opacity: 1; }
+            }
+            @keyframes slideUp {
+                from { transform: translate(-50%, 0); opacity: 1; }
+                to { transform: translate(-50%, -100%); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Handle Enter key in search
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                handleSearch();
+            }
+        });
+
+        // Add click event to nav icons
+        document.querySelectorAll('.nav-icon').forEach(icon => {
+            icon.addEventListener('click', function() {
+                const altText = this.querySelector('img')?.alt || 'icon';
+                console.log(`Clicked on ${altText}`);
+                showNotification(`${altText} feature clicked`);
+            });
+        });
+
+        // Add click event to footer images
+        document.querySelectorAll('.footer-img').forEach(img => {
+            img.addEventListener('click', function() {
+                console.log('Clicked on footer image:', this.alt);
+                showNotification(`Viewing: ${this.alt}`);
+            });
+        });
+
+        // Image error handling - shows fallback if image fails to load
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('error', function() {
+                // Hide the image and show the fallback icon
+                this.style.display = 'none';
+                const fallback = this.parentElement.querySelector('.card-icon, .illustration-icon, .logo-icon, .chat-avatar');
+                if (fallback) {
+                    fallback.style.display = 'flex';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

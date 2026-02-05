@@ -12,15 +12,8 @@ body{
     border: 2px solid rgb(210, 32, 32);
     box-sizing: border-box;
 }
-.left{
-    width: 25vw;
-    height: 80vh;
-    float: left;   
-}
-.right{
-    width: 100vw;
-    height: 80vh;
-}
+
+
 .imagee{
     margin-bottom: 29px;
     width: 45px;
@@ -110,7 +103,7 @@ div.container{
   
  
   /* Sidebar */
-  .sidebar {
+  .sidebar-container {
     width: 350px;
     height: 90vh;
     background: #f2e8dc;
@@ -120,6 +113,28 @@ div.container{
     top: 0;
     border-right: 1px solid #e0d4c2;
   }
+
+  .location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.icon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.icon-btn i {
+  font-size: 20px;
+}
   
   .logo {
     align-items: center;
@@ -176,13 +191,17 @@ div.container{
     color: #6b3f1d;
     border-top: 1px solid #e0d4c2;
   }
-  .header{
-    height: 10vh;
-    column-gap: 40px;
-    background-color: #f2e8dc;
-    display: flex;
+
+  .header{ display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding: 14px 40px;
+    height: 72px;              /* Navbar height */
+    background: #f7f0e6;       /* Same beige tone as screenshot */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
 
   .avatar {
@@ -402,6 +421,46 @@ div.container{
   background-size: 400% 100%;
   animation: shimmer 1.4s infinite;
   border-radius: 14px;
+}
+
+/* CATEGORY BAR */
+.category-bar {
+ background-color: rgb(254, 253, 253);
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 28px;
+padding: 12px 40px;
+border-top: 1px solid #f1f1f1;
+}
+
+.category-bar a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* ACTIVE CATEGORY */
+.category-bar a.active {
+  color: #d35400;
+}
+
+.category-bar a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 100%;
+  height: 3px;
+  background: rgb(210, 32, 32);
+  border-radius: 10px;
 }
 
 @keyframes shimmer {
