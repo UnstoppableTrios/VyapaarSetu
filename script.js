@@ -2,7 +2,7 @@
   
   setTimeout(() => {
     const grid = document.getElementById("shopGrid");
-
+  
     grid.innerHTML = `
       ${generateShopCard("Raju's Spices", "Spices & Masalas", "4.8", "3.2 km")}
       ${generateShopCard("Kiran's Fashion", "Clothing Store", "4.6", "2.1 km")}
@@ -10,7 +10,7 @@
       ${generateShopCard("Fresh Mart", "Groceries", "4.7", "2.9 km")}
     `;
   }, 1500);
-
+  
   function generateShopCard(name, category, rating, distance) {
     return `
       <div class="shop-card">
@@ -30,9 +30,22 @@
       </div>
     `;
   }
+  
+  // Sidebar toggle
+  const menuBtn = document.getElementById("menuToggle");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
 
-  (function(){
-    $('#msbo').on('click', function(){
-      $('body').toggleClass('msb-x');
-    });
-  }());
+menuBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("collapsed");
+  overlay.classList.toggle("active");
+});
+
+// close when clicking outside
+overlay.addEventListener("click", () => {
+  sidebar.classList.add("collapsed");
+  overlay.classList.remove("active");
+});
+
+  
+  

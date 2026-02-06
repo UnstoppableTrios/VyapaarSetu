@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="utility.css">
 </head>
 
+
+
 <body>
 
+    <!-- HEADER -->
     <div class="header">
-
-        <i class="fas fa-bars menu-toggle"></i>
-
+        <button id="menuToggle" class="menu-btn">☰</button>
 
         <div class="logo">
             <span>Vyapaar</span><strong>Setu</strong>
@@ -26,20 +27,41 @@
             <i class="fa-solid fa-chevron-down"></i>
         </div>
 
-
-        <!--<label for='search-btn'>Show search bar</label>-->
-        <input id='search-bar' type='text' placeholder=' 🔍 Search...' />
+        <input id="search-bar" type="text" placeholder=" 🔍 Search..." />
         <img src="image/cover.jpg" class="avatar" />
 
         <div class="icon-btn">
             <i class="fa-solid fa-cart-shopping"></i>
             <span>Cart</span>
         </div>
-
     </div>
-   
 
+    <!-- SIDEBAR (ASIDE) 🔥 PLACE IT HERE -->
+    <div id="overlay">
 
+        <aside class="sidebar collapsed" id="sidebar">
+            <div class="container">
+                <div class="logo1">
+                    <img class="imagee" src="image/logo.svg" alt="logo">
+                    <div class="logo">
+                        <span>Vyapaar</span><strong>Setu</strong>
+                    </div>
+                </div>
+
+                <nav class="menu">
+                    <a href="landing.html" class="active">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <a href="#"><i class="fas fa-compass"></i> Discovery</a>
+                    <a href="#"><i class="fas fa-search"></i> Search & Filter</a>
+                    <a href="test.html"><i class="fas fa-users"></i> Help & Support</a>
+                    <a href="#"><i class="fas fa-store"></i> Market Explorer</a>
+                </nav>
+            </div>
+        </aside>
+    </div>
+
+    <!-- CATEGORY BAR -->
     <div class="category-bar">
         <a class="active"><i class="fa-solid fa-bag-shopping"></i> All</a>
         <a><i class="fa-solid fa-house"></i> Home</a>
@@ -50,47 +72,363 @@
         <a><i class="fa-solid fa-wand-magic-sparkles"></i> Beauty</a>
         <a><i class="fa-solid fa-shirt"></i> Fashion</a>
     </div>
-    </aside>
 
-    <main class="main-content">
-        <div class="main-content">
-
-            <h2 class="section-title"> 🏪 Trending Shops Near You</h2>
-
-            <div class="shop-grid" id="shopGrid">
-
-                <!-- Skeleton cards -->
-                <div class="shop-card skeleton"></div>
-                <div class="shop-card skeleton"></div>
-                <div class="shop-card skeleton"></div>
-                <div class="shop-card skeleton"></div>
-
-            </div>
-
-
-
+    <section class="category-wrapper">
+    
+        <div class="categories" id="categoryTrack">
+            <div class="cat"><img src="img/"><p>Fruits & Vegetables</p></div>
+            <div class="cat"><img src="img/dairy.png"><p>Dairy, Bread & Eggs</p></div>
+            <div class="cat"><img src="img/atta.png"><p>Atta, Rice & Dals</p></div>
+            <div class="cat"><img src="img/masala.png"><p>Masala & Dry Fruits</p></div>
+            <div class="cat"><img src="img/breakfast.png"><p>Breakfast & Sauces</p></div>
+            <div class="cat"><img src="img/fruits.png"><p>Fruits & Vegetables</p></div>
+            <div class="cat"><img src="img/dairy.png"><p>Dairy, Bread & Eggs</p></div>
+            <div class="cat"><img src="img/atta.png"><p>Atta, Rice & Dals</p></div>
+            <div class="cat"><img src="img/masala.png"><p>Masala & Dry Fruits</p></div>
+            <div class="cat"><img src="img/breakfast.png"><p>Breakfast & Sauces</p></div>
+            <div class="cat"><img src="img/frozen.png"><p>Frozen Food</p></div>
+            <div class="cat"><img src="img/frozen.png"><p>Frozen Food</p></div>
+            <div class="cat"><img src="img/frozen.png"><p>Frozen Food</p></div>
         </div>
-    </main>
+    </section>
+
+    <section class="banner-slider">
+        <div class="banner-track" id="bannerTrack">
+            <div class="banner red">
+                <h2>Welcome TO VyapaarSetu </h2>
+                <p>OUR Local Shop Hero</p>
+                <button>Order now</button>
+            </div>
+    
+            <div class="banner purple">
+                <h2>ALL NEW VYAPAARSETU EXPERIENCE</h2>
+                <p>₹0 Fees · Lowest Prices · No Surge</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Laundry Care -->
+<section class="section">
+    <div class="section-header">
+      <h2>Laundry Care</h2>
+      <a href="#">See All ›</a>
     </div>
 
+    <div class="grid">
+      <!-- Card -->
 
+      <div class="card">
+        <button class="add-btn">ADD</button>
+        <img src="https://via.placeholder.com/150" />
+        <div class="price-row">
+          <span class="price">₹184</span>
+          <span class="mrp">₹249</span>
+        </div>
+        <div class="off">₹65 OFF</div>
+        <div class="title">Rin Matic Top Load Detergent Liquid Pouch</div>
+        <div class="meta">Fresh & Fragrant</div>
+        <div class="rating">⭐ 4.8 (30.3k)</div>
+      </div>
 
+      <div class="card">
+        <button class="add-btn">ADD</button>
+        <img src="https://via.placeholder.com/150" />
+        <div class="price-row">
+          <span class="price">₹184</span>
+          <span class="mrp">₹249</span>
+        </div>
+        <div class="off">₹65 OFF</div>
+        <div class="title">Rin Matic Top Load Detergent Liquid Pouch</div>
+        <div class="meta">Fresh & Fragrant</div>
+        <div class="rating">⭐ 4.8 (30.3k)</div>
+      </div>
 
-    <footer class="footer flex flex-col justify-center items-center gap-2 p-4">
+      <div class="card">
+        <button class="add-btn">ADD</button>
+        <img src="https://via.placeholder.com/150" />
+        <div class="price-row">
+          <span class="price">₹184</span>
+          <span class="mrp">₹249</span>
+        </div>
+        <div class="off">₹65 OFF</div>
+        <div class="title">Rin Matic Top Load Detergent Liquid Pouch</div>
+        <div class="meta">Fresh & Fragrant</div>
+        <div class="rating">⭐ 4.8 (30.3k)</div>
+      </div>
+
+      <div class="card">
+        <button class="add-btn">ADD</button>
+        <img src="https://via.placeholder.com/150" />
+        <div class="price-row">
+          <span class="price">₹184</span>
+          <span class="mrp">₹249</span>
+        </div>
+        <div class="off">₹65 OFF</div>
+        <div class="title">Rin Matic Top Load Detergent Liquid Pouch</div>
+        <div class="meta">Fresh & Fragrant</div>
+        <div class="rating">⭐ 4.8 (30.3k)</div>
+      </div>
+
+      <div class="card">
+        <button class="add-btn">ADD</button>
+        <img src="https://via.placeholder.com/150" />
+        <div class="price-row">
+          <span class="price">₹184</span>
+          <span class="mrp">₹249</span>
+        </div>
+        <div class="off">₹65 OFF</div>
+        <div class="title">Rin Matic Top Load Detergent Liquid Pouch</div>
+        <div class="meta">Fresh & Fragrant</div>
+        <div class="rating">⭐ 4.8 (30.3k)</div>
+      </div>
+      
+      <div class="card">
+        <button class="add-btn">ADD</button>
+        <img src="https://via.placeholder.com/150" />
+        <div class="price-row">
+          <span class="price">₹184</span>
+          <span class="mrp">₹249</span>
+        </div>
+        <div class="off">₹65 OFF</div>
+        <div class="title">Rin Matic Top Load Detergent Liquid Pouch</div>
+        <div class="meta">Fresh & Fragrant</div>
+        <div class="rating">⭐ 4.8 (30.3k)</div>
+      </div>
+
+      <div class="card">
+        <button class="add-btn">ADD</button>
+        <img src="https://via.placeholder.com/150" />
+        <div class="price-row">
+          <span class="price">₹303</span>
+          <span class="mrp">₹374</span>
+        </div>
+        <div class="off">₹71 OFF</div>
+        <div class="title">Surf Excel Matic Front Load Detergent Liquid</div>
+        <div class="meta">Stain Removal</div>
+        <div class="rating">⭐ 4.7 (6.7k)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Household Cleaning -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Household Cleaning</h2>
+      <a href="#">See All ›</a>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <button class="add-btn">ADD</button>
+            <img src="https://via.placeholder.com/150" />
+            <div class="price-row">
+              <span class="price">₹139</span>
+              <span class="mrp">₹220</span>
+            </div>
+            <div class="off">₹81 OFF</div>
+            <div class="title">Mr. Muscle Kitchen Cleaner Spray</div>
+            <div class="rating">⭐ 4.7 (3.3k)</div>
+          </div>
+    
+          <div class="card">
+            <button class="add-btn">ADD</button>
+            <img src="https://via.placeholder.com/150" />
+            <div class="price-row">
+              <span class="price">₹469</span>
+              <span class="mrp">₹900</span>
+            </div>
+            <div class="off">₹431 OFF</div>
+            <div class="title">Nimyle Herbal Floor Cleaner</div>
+            <div class="rating">⭐ 4.9 (361)</div>
+          </div>
+
+        <div class="card">
+            <button class="add-btn">ADD</button>
+            <img src="https://via.placeholder.com/150" />
+            <div class="price-row">
+              <span class="price">₹139</span>
+              <span class="mrp">₹220</span>
+            </div>
+            <div class="off">₹81 OFF</div>
+            <div class="title">Mr. Muscle Kitchen Cleaner Spray</div>
+            <div class="rating">⭐ 4.7 (3.3k)</div>
+          </div>
+    
+          <div class="card">
+            <button class="add-btn">ADD</button>
+            <img src="https://via.placeholder.com/150" />
+            <div class="price-row">
+              <span class="price">₹469</span>
+              <span class="mrp">₹900</span>
+            </div>
+            <div class="off">₹431 OFF</div>
+            <div class="title">Nimyle Herbal Floor Cleaner</div>
+            <div class="rating">⭐ 4.9 (361)</div>
+          </div>
+
+        <div class="card">
+            <button class="add-btn">ADD</button>
+            <img src="https://via.placeholder.com/150" />
+            <div class="price-row">
+              <span class="price">₹139</span>
+              <span class="mrp">₹220</span>
+            </div>
+            <div class="off">₹81 OFF</div>
+            <div class="title">Mr. Muscle Kitchen Cleaner Spray</div>
+            <div class="rating">⭐ 4.7 (3.3k)</div>
+          </div>
+    
+          <div class="card">
+            <button class="add-btn">ADD</button>
+            <img src="https://via.placeholder.com/150" />
+            <div class="price-row">
+              <span class="price">₹469</span>
+              <span class="mrp">₹900</span>
+            </div>
+            <div class="off">₹431 OFF</div>
+            <div class="title">Nimyle Herbal Floor Cleaner</div>
+            <div class="rating">⭐ 4.9 (361)</div>
+          </div>
+
+      <div class="card">
+        <button class="add-btn">ADD</button>
+        <img src="https://via.placeholder.com/150" />
+        <div class="price-row">
+          <span class="price">₹469</span>
+          <span class="mrp">₹900</span>
+        </div>
+        <div class="off">₹431 OFF</div>
+        <div class="title">Nimyle Herbal Floor Cleaner</div>
+        <div class="rating">⭐ 4.9 (361)</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <h2>Rice</h2>
+      <a href="#">See All ›</a>
+    </div>
+
+    <div class="grid">
+      <!-- Card -->
+
+      <div class="card">
+        <button class="add-btn">ADD</button>
+        <img src="https://via.placeholder.com/150" />
+        <div class="price-row">
+          <span class="price">₹184</span>
+          <span class="mrp">₹249</span>
+        </div>
+        <div class="off">₹65 OFF</div>
+        <div class="title">Rin Matic Top Load Detergent Liquid Pouch</div>
+        <div class="meta">Fresh & Fragrant</div>
+        <div class="rating">⭐ 4.8 (30.3k)</div>
+      </div>
+
+      <div class="card">
+        <button class="add-btn">ADD</button>
+        <img src="https://via.placeholder.com/150" />
+        <div class="price-row">
+          <span class="price">₹184</span>
+          <span class="mrp">₹249</span>
+        </div>
+        <div class="off">₹65 OFF</div>
+        <div class="title">Rin Matic Top Load Detergent Liquid Pouch</div>
+        <div class="meta">Fresh & Fragrant</div>
+        <div class="rating">⭐ 4.8 (30.3k)</div>
+      </div>
+
+      <div class="card">
+        <button class="add-btn">ADD</button>
+        <img src="https://via.placeholder.com/150" />
+        <div class="price-row">
+          <span class="price">₹184</span>
+          <span class="mrp">₹249</span>
+        </div>
+        <div class="off">₹65 OFF</div>
+        <div class="title">Rin Matic Top Load Detergent Liquid Pouch</div>
+        <div class="meta">Fresh & Fragrant</div>
+        <div class="rating">⭐ 4.8 (30.3k)</div>
+      </div>
+
+      <div class="card">
+        <button class="add-btn">ADD</button>
+        <img src="https://via.placeholder.com/150" />
+        <div class="price-row">
+          <span class="price">₹184</span>
+          <span class="mrp">₹249</span>
+        </div>
+        <div class="off">₹65 OFF</div>
+        <div class="title">Rin Matic Top Load Detergent Liquid Pouch</div>
+        <div class="meta">Fresh & Fragrant</div>
+        <div class="rating">⭐ 4.8 (30.3k)</div>
+      </div>
+
+      <div class="card">
+        <button class="add-btn">ADD</button>
+        <img src="https://via.placeholder.com/150" />
+        <div class="price-row">
+          <span class="price">₹184</span>
+          <span class="mrp">₹249</span>
+        </div>
+        <div class="off">₹65 OFF</div>
+        <div class="title">Rin Matic Top Load Detergent Liquid Pouch</div>
+        <div class="meta">Fresh & Fragrant</div>
+        <div class="rating">⭐ 4.8 (30.3k)</div>
+      </div>
+      
+      <div class="card">
+        <button class="add-btn">ADD</button>
+        <img src="https://via.placeholder.com/150" />
+        <div class="price-row">
+          <span class="price">₹184</span>
+          <span class="mrp">₹249</span>
+        </div>
+        <div class="off">₹65 OFF</div>
+        <div class="title">Rin Matic Top Load Detergent Liquid Pouch</div>
+        <div class="meta">Fresh & Fragrant</div>
+        <div class="rating">⭐ 4.8 (30.3k)</div>
+      </div>
+
+      <div class="card">
+        <button class="add-btn">ADD</button>
+        <img src="https://via.placeholder.com/150" />
+        <div class="price-row">
+          <span class="price">₹303</span>
+          <span class="mrp">₹374</span>
+        </div>
+        <div class="off">₹71 OFF</div>
+        <div class="title">Surf Excel Matic Front Load Detergent Liquid</div>
+        <div class="meta">Stain Removal</div>
+        <div class="rating">⭐ 4.7 (6.7k)</div>
+      </div>
+    </div>
+  </section>
+
+    <!-- MAIN CONTENT 
+    <main class="main-content">
+        <h2 class="section-title">🏪 Trending Shops Near You</h2>
+
+        <div class="shop-grid" id="shopGrid">
+            <div class="shop-card skeleton"></div>
+            <div class="shop-card skeleton"></div>
+            <div class="shop-card skeleton"></div>
+            <div class="shop-card skeleton"></div>
+        </div>
+    </main> -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
         <p>© 2026 VyapaarSetu. All rights reserved.</p>
         <span>Made with ❤️ and care</span>
-
     </footer>
-    <script>
 
-        const toggleBtn = document.querySelector(".menu-toggle");
-        const sidebar = document.querySelector(".sidebar");
+</body>
 
-        toggleBtn.addEventListener("click", () => {
-            sidebar.classList.toggle("collapsed");
-        });
-    </script>
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 
 </html>
