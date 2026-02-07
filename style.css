@@ -256,17 +256,82 @@ div.container {
 }
 
 .footer {
-  gap: 20px;
-  height: 80px;
-  align-content: center;
-  background-color: #f2e8dc;
-  text-align: center;
-  font-size: 14px;
-  color: #6b3f1d;
-  border-top: 1px solid #e0d4c2;
+  background: #fff8ed;
+  padding: 60px 80px;
+  border-top: 1px solid #f71010;
+  font-family: Inter, sans-serif;
 }
 
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 60px;
+}
+
+.brand-logo {
+  color: #ff2b6a;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.social-icons a {
+  color: #888;
+  transition: 0.2s;
+}
+
+.social-icons a:hover {
+  color: #ff2b6a;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #9aa0a6;
+  line-height: 1.6;
+}
+
+.footer-links h4,
+.footer-app h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer-links a {
+  display: block;
+  color: #444;
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.footer-links a:hover {
+  color: #ff2b6a;
+}
+
+.footer-app .store-btn {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+
+.footer-app img {
+  height: 40px;
+}
+
+
 .header {
+  border-bottom: 1px solid #fa0c0c;
   display: flex;
   align-items: center;
   justify-content: space-between;
